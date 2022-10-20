@@ -74,8 +74,8 @@
             </ul>
           </div>
           <div class="centerplayer">
-            <audio class="audio" preload="metadata" autoplay controls loop id="myaudio">
-              <source src="/src/imagens/rain-music.mp3">
+            <audio audio autoplay="autoplay" controls="controls" loop="loop" class="audio" id="myaudio">
+              <source src="/src/imagens/rain-music.mp3" type="audio/mp3" >
               
               seu navegador não suporta HTML5
             </audio>
@@ -88,7 +88,9 @@
     <script>
       var audio = document.getElementById("myaudio");
       audio.volume = 0.1;
-      aud
+      var audio = document.createElement("audio")
+      audio.autoplay = true;
+ 
     </script>
   </body>
 </html>
